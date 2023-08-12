@@ -10,12 +10,17 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
+import { HomeComponent } from './views/home/home.component';
+import { ProductComponent } from './views/product/product.component';
+import { MatCardModule } from "@angular/material/card";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,8 @@ import { MatListModule } from "@angular/material/list";
     MatButtonModule, 
     MatIconModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
